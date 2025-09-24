@@ -1,0 +1,43 @@
+.main {
+  background-color: lightgrey;
+  font-family: Arial, sans-serif;
+  color: white;
+    display: flex;
+}
+.container {
+  display: flex;
+    width: 50%;
+  background-color: #fff;
+  flex-direction: column;
+  color: #444;
+}
+.aside {
+  display: flex;
+  width: 50%;
+  gap: 10px;
+  background-color: #fff;
+
+}
+.item.article,
+.item.header,
+.item.menu,
+.item.footer-content {
+  background-color: gray;
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
+.item.header {
+  align-items: start;
+}
+.item.article {
+}
+.item.menu {
+  align-items: stretch;
+   flex-direction: column;
+  justify-content: end;
+  align-items: start;
+}
+.item.footer-content {
+  display: flex;
+}

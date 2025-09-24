@@ -1,0 +1,50 @@
+body {
+  font-weight: bold;
+  color: white;
+}
+.container {
+  background-color: gray;
+  color: white;
+  width: 500px;
+  margin: auto;
+  border: 1px solid black;
+    height: 400px;
+   position: relative;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  text-align: center;
+  margin: 10px;
+}
+.green {
+  background-color: green;
+  float: left;
+}
+.orange {
+  background-color: orange;
+
+  float: left;
+}
+.gray {
+  background-color: gray;
+    clear: both;
+}
+.top-right {
+  background-color: blue;
+float: right;
+  top: 10px;
+  right: 10px;
+  position: absolute;
+    clear:right;
+    
+}
+.bottom-left  {
+  background-color: red;
+  bottom: 10px;
+  left: 10px;
+  position: absolute;
+  float:left;
+  top: 220px;
+}

@@ -1,0 +1,95 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: oxigen;
+    background-color: #bfff80 ;
+    color: #333;
+}
+h1 {
+    color: black;
+    padding: 1em 0;
+    text-align: center;
+}
+#lista{
+    list-style: none;
+    margin: 2em auto;
+    width: 50%;
+    height: auto;
+    text-align: center;
+    border: 5px black solid;
+}
+
+
+nav {
+    background-color: #80BFFF;
+    padding: 0.5em 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    transition: background 0.3s;
+    border-radius: 4px;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #ff80bf ;
+    color: #333;
+    
+}
+#lista li:nth-child( odd) {
+    background-color: #80BFFF;
+    text-align: center;
+    display: block;
+    height: 100%; 
+}
+#lista li:nth-child( even) {
+    background-color: #ff80bf ;
+    text-align: center;
+    display: block;
+    height: 100%; 
+}
+#lista li {
+    padding: 1em 0;
+    border-bottom: 1px solid #ccc;
+    font-size: 1.2em;
+
+    
+}
+search{
+    margin-left: 20px; 
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+search input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+search button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #ff80bf ;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
