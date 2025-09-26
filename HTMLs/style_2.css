@@ -1,0 +1,51 @@
+body {
+  background-color: white;
+  color: black;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  min-height: 10vh;
+  min-width: 25vw;
+  flex-wrap: wrap;
+}
+.header,
+.main,
+.footer {
+  background-color: gray;
+  color: black;
+  text-align: center;
+}
+.menu {
+  width: 24.7%;
+  border: 1px solid white;
+  
+}
+.main {
+  display: flex;
+  flex-direction: row;
+}
+.item {
+  border: 1px solid gray;
+   background-color: darkgray;
+}
+.item.item1 {
+  min-width: 20vw;
+  min-height: 60vh;
+}
+.item.item2 {
+  min-width: 20vw;
+}
+
+.item.item3 {
+  min-width: 60vw;
+}
+.footer {
+  display: flex;
+  flex-direction: row;
+}
+.footer .item {
+  min-width: 50vw;
+  min-height: 30vh;
+  
+}
