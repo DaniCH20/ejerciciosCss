@@ -1,0 +1,59 @@
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  gap: 10px;
+}
+.head {
+  background-color: lightblue;
+  text-align: start;
+  padding: 20px;
+  border-radius: 10px;
+}
+.nav {
+  background-color: lightgreen;
+  text-align: start;
+  padding: 20px;
+  border-radius: 10px;
+}
+.articulo {
+  background-color: lightcoral;
+  text-align: center;
+  padding: 20px;
+    height: 30vh;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+}
+
+.art1,
+.art2,
+.aside {
+  display: flex;
+  border-radius: 10px;
+  margin: 5px;
+}
+.art1 {
+  background-color: lightpink;
+    align-self: start;
+      height: 30vh;
+  flex: 2;
+}
+.art2 {
+  background-color: lightseagreen;
+  align-self: center;
+  height: 10vh;
+  flex: 2;
+}
+.aside {
+  background-color: lightgoldenrodyellow;
+ align-self: center;
+     height: 15vh;
+  flex: 1;
+}
+
+.pie {
+  background-color: lightgray;
+  text-align: start;
+  padding: 20px;
+}

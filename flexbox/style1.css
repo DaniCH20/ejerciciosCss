@@ -1,0 +1,48 @@
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  gap: 10px;
+}
+.head {
+  background-color: lightblue;
+  text-align: start;
+  padding: 20px;
+}
+.nav {
+  background-color: lightgreen;
+  text-align: start;
+  padding: 20px;
+}
+.articulo {
+  background-color: lightcoral;
+  text-align: center;
+  padding: 20px;
+  min-height: 30vh;
+  display: flex;
+  flex-direction: row;
+ 
+}
+.art1 {
+  background-color: lightpink;
+  padding: 20px;
+  flex: 2;
+}
+.art2 {
+  background-color: lightseagreen;
+
+  padding: 20px;
+  flex: 2;
+}
+.aside {
+  background-color: lightgoldenrodyellow;
+  text-align: center;
+  padding: 20px;
+  flex: 1;
+}
+
+.pie {
+  background-color: lightgray;
+  text-align: start;
+  padding: 20px;
+}
