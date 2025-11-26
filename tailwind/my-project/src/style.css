@@ -1,1 +1,6 @@
 @import "tailwindcss";
+@theme {
+  --color-morado: #615fff;
+  --color-fondo: #0e172b;
+  --color-dentro: #0f172b;
+}
