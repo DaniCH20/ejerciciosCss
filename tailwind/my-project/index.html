@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/src/style.css" rel="stylesheet" />
-    <title>DevStudio - Landing</title>
-  </head>
 
-  <body class="text-white bg-black">
-    <!-- NAVBAR 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="/src/style.css" rel="stylesheet" />
+  <title>DevStudio - Landing</title>
+</head>
+
+<body class="text-white bg-black">
+  <!-- NAVBAR 
   La página debe incluir un navbar en la parte superior con:
 •	Posición fija en scroll (puedes ayudarte con sticky top-0).
 •	Fondo ligeramente transparente.
@@ -17,36 +18,33 @@
 •	En pantallas pequeñas, los enlaces deben ocultarse y mostrarse un botón tipo “menú” (usa hidden y modificadores responsivos como md:flex).
  
   -->
-    <header class="bg-black text-white py-10 border-l">
-      <nav
-        class="sticky top-0 flex items-center flex-row justify-between gap-2"
-      >
-        <div>
+  <header class="bg-black/50 text-white py-10 border-b-1">
+    <nav class="sticky top-0 flex items-center flex-row justify-around gap-2">
+      <div>
+        <!-- TODO: Logo: haz que parezca el nombre de la marca -->
+        <div class="text-3xl font-bold bg-clip-text text-transparent">
           <!-- TODO: Logo: haz que parezca el nombre de la marca -->
-          <div class="text-3xl font-bold bg-clip-text text-transparent">
-            <!-- TODO: Logo: haz que parezca el nombre de la marca -->
-            <span class="text-[var(--color-morado)]">Dev</span
-            ><span class="text-white">Studio</span>
-          </div>
+          <span class="text-[var(--color-morado)]">Dev</span><span class="text-white">Studio</span>
         </div>
-        <div class="flex gap-10">
-          <!-- TODO:
+      </div>
+      <div class="flex gap-10 collapse sm:visible ">
+        <!-- TODO:
           - En escritorio: mostrar estos enlaces en fila, con separación y hover.
           - En móvil: puedes ocultarlos y mostrar solo un icono / texto "Menu" (sin JS obligatorio).
         -->
-          <a href="#servicios">Servicios</a>
-          <a href="#sobre-nosotros">Sobre nosotros</a>
-          <a href="#contacto">Contacto</a>
-        </div>
-        <!-- TODO opcional: botón / icono para menú móvil -->
-        <button class="">☰</button>
-      </nav>
-    </header>
+        <a href="#servicios">Servicios</a>
+        <a href="#sobre-nosotros">Sobre nosotros</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+      <!-- TODO opcional: botón / icono para menú móvil -->
+      <button class="visible sm:collapse hover:shadow-2xl shadow-white/50">☰</button>
+    </nav>
+  </header>
 
-    <!-- HERO -->
-    <section class="bg-[var(--color-dentro)]" id="hero">
-      <div class="flex flex-col-2 gap-4 justify-evenly md:flex-row">
-        <!-- TODO:
+  <!-- HERO -->
+  <section class="bg-[var(--color-dentro)]" id="hero">
+    <div class="flex flex-col gap-4 justify-evenly md:flex-row">
+      <!-- TODO:
         - En móvil: contenido en columna.
         - En pantallas grandes: divide en dos columnas (texto + bloque decorativo).
         - Fondo con color o degradado.
@@ -60,62 +58,64 @@
         • Un bloque decorativo al lado derecho con transparencia, desenfoque (backdrop-blur) y esquinas redondeadas.
 
       -->
-        <div class="m-10">
-          <h1 class="text-5xl font-bold">Impulsa tu presencia digital con<span class="text-[var(--color-morado)]"> DevStudio</span></h1>
-          <p class="">
-            Diseñamos y desarrollamos experiencias web rápidas, modernas y
-            adaptadas a tu negocio , utilizando las mejores practicas en
-            rendimiento accesibilidad y diseño.
-          </p>
-          <div class="m-10 gap-5">
-            <!-- TODO: Botón principal con hover y bordes redondeados -->
-            <a
-              href="#contacto"
-              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded-lg"
-            >
-              Solicitar propuesta
-            </a>
-            <!-- TODO: Botón secundario sutil -->
-            <a href="#servicios" class="text-white m-5 hover:bg-gray-700 font-bold py-2 px-4 border rounded-lg">
-              Ver servicios
-            </a>
-          </div>
-        </div>
-
-        <!-- Bloque decorativo / Imagen simulada -->
-        <div class="bg-[var(--color-fondo)] shadow-gray-200  h-60 w-120  rounded-xl border-white m-10 ">
-          <!-- TODO:
-          - Simula una tarjeta / ventana de app con fondo blanco o translúcido.
-          - Bordes redondeados, sombra, padding.
-          - Tal vez unos rectángulos internos como "líneas de código".
-        -->
-          <div class="flex  flex-row justify-start gap-1 m-6">
-            <div class="bg-blue-700 h-3 w-3 rounded-full"></div>
-            <div class="bg-red-700 h-3 w-3 rounded-full"></div>
-            <div class="bg-green-700 h-3 w-3 rounded-full"></div>
-          </div>
-          <div class="grid grid-cols-1 items-center m-5">
-            <div class="bg-gray-700 h-3 w-90 m-1  rounded-lg"></div>
-            <div class="bg-gray-700 h-3 w-70 m-1  rounded-lg" ></div>
-            <div class="bg-gray-700 h-3 w-100 m-1  rounded-lg"></div>
-          </div>
-          <div class="flex items-center flex-row justify-around m-5">
-            <div class="bg-blue-700 h-20 w-33 rounded-lg"></div>
-            <div class="bg-red-700 h-20 w-33 rounded-lg"></div>
-            <div class="bg-green-700 h-20 w-33 rounded-lg"></div>
-          </div>
+      <div class="m-10">
+        <h1 class="text-5xl font-bold mt-2">Impulsa tu presencia digital con<span class="text-[var(--color-morado)]">
+            DevStudio</span></h1>
+        <p class="mt-2">
+          Diseñamos y desarrollamos experiencias web rápidas, modernas y
+          adaptadas a tu negocio , utilizando las mejores practicas en
+          rendimiento accesibilidad y diseño.
+        </p>
+        <div class=" flex flex-col gap-5 m-5 md:flex-row text-center ">
+          <!-- TODO: Botón principal con hover y bordes redondeados -->
+          <a href="#contacto"
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded-lg">
+            Solicitar propuesta
+          </a>
+          <!-- TODO: Botón secundario sutil -->
+          <a href="#servicios" class="text-white  hover:bg-gray-700 font-bold py-2 px-4 border rounded-lg">
+            Ver servicios
+          </a>
         </div>
       </div>
-    </section>
 
-    <!-- SERVICIOS -->
-    <section id="servicios" class="bg-black">
-      <div class="text-center">
-        <h2 class="text-3xl font-bold">Nuestros servicios</h2>
-        <p class="text-gray-300">Soluciones completas para tu negocio digital.</p>
+      <!-- Bloque decorativo / Imagen simulada -->
+      <div
+        class="bg-white/10 rounded-xl  m-6 p-6 hover:shadow-2xl shadow-white/50 flex flex-col justify-between w-full max-w-md md:max-w-lg">
+
+        <!-- Semáforos -->
+        <div class="flex gap-2 mb-4">
+          <div class="bg-red-700 h-3 w-3 rounded-full"></div>
+          <div class="bg-yellow-500 h-3 w-3 rounded-full"></div>
+          <div class="bg-green-700 h-3 w-3 rounded-full"></div>
+        </div>
+
+        <!-- Líneas -->
+        <div class="grid gap-2 mb-4">
+          <div class="bg-gray-700 h-3 rounded-lg w-full"></div>
+          <div class="bg-gray-700 h-3 rounded-lg w-4/5"></div>
+          <div class="bg-gray-700 h-3 rounded-lg w-full"></div>
+        </div>
+
+        <!-- Rectángulos degradados -->
+        <div class="grid grid-cols-3 gap-3">
+          <div class="bg-gradient-to-br from-blue-400 via-blue-900 to-slate-900 rounded-lg aspect-[3/2]"></div>
+          <div class="bg-gradient-to-br from-green-400 via-green-900 to-slate-900 rounded-lg aspect-[3/2]"></div>
+          <div class="bg-gradient-to-br from-red-400 via-red-900 to-slate-900 rounded-lg aspect-[3/2]"></div>
+        </div>
+
       </div>
+    </div>
+  </section>
 
-      <!-- TODO:
+  <!-- SERVICIOS -->
+  <section id="servicios" class="bg-black">
+    <div class="text-center">
+      <h2 class="text-3xl font-bold">Nuestros servicios</h2>
+      <p class="text-gray-300">Soluciones completas para tu negocio digital.</p>
+    </div>
+
+    <!-- TODO:
       - Grid responsivo:
         - 1 columna en móvil
         - 2 columnas en md:
@@ -127,61 +127,67 @@
         - Padding
         - Hover: elevar/sombra/cambiar borde
     -->
-      <div class="grid grid-cols-3 items-center m-5">
-        <article class=" bg-[var(--color-dentro)] border rounded-xl border-white m-10 p-7 hover:shadow-2xl shadow-white/50">
-          <h3 class="text-lg font-bold">Desarrollo Web</h3>
-          <p class="">Sitios rápidos, accesibles y optimizados para SEO.</p>
-        </article>
-        <article class="bg-[var(--color-dentro)] border rounded-xl border-white m-10 p-7 hover:shadow-2xl shadow-white/50">
-          <h3 class="text-lg font-bold">Diseño UI/UX</h3>
-          <p class="">
-            Interfaces limpias, modernas y centradas en el usuario.
-          </p>
-        </article>
-        <article class="bg-[var(--color-dentro)] border rounded-xl border-white m-10 p-7 hover:shadow-2xl shadow-white/50">
-          <h3 class="text-lg font-bold">eCommerce</h3>
-          <p class="">Tiendas online seguras y fáciles de gestionar.</p>
-        </article>
-        <article class="bg-[var(--color-dentro)] border rounded-xl border-white m-10 p-7 hover:shadow-2xl shadow-white/50">
-          <h3 class="text-lg font-bold">Branding</h3>
-          <p class="">
-            Construimos una identidad visual coherente y memorable.
-          </p>
-        </article>
-        <article class="bg-[var(--color-dentro)] border rounded-xl border-white m-10 p-7 hover:shadow-2xl shadow-white/50">
-          <h3 class="text-lg font-bold">Optimización</h3>
-          <p class="">Mejoramos rendimiento, Core Web Vitals y conversión.</p>
-        </article>
-        <article class="bg-[var(--color-dentro)] border rounded-xl border-white m-10 p-7 hover:shadow-2xl shadow-white/50">
-          <h3 class="text-lg font-bold">Soporte</h3>
-          <p class="">Mantenimiento y mejoras continuas para tu proyecto.</p>
-        </article>
-      </div>
-    </section>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 m-5">
+      <article
+        class=" bg-[var(--color-dentro)] border rounded-xl border-white m-10 p-7 hover:shadow-2xl shadow-white/50">
+        <h3 class="text-lg font-bold">Desarrollo Web</h3>
+        <p class="">Sitios rápidos, accesibles y optimizados para SEO.</p>
+      </article>
+      <article
+        class="bg-[var(--color-dentro)] border rounded-xl border-white m-10 p-7 hover:shadow-2xl shadow-white/50">
+        <h3 class="text-lg font-bold">Diseño UI/UX</h3>
+        <p class="">
+          Interfaces limpias, modernas y centradas en el usuario.
+        </p>
+      </article>
+      <article
+        class="bg-[var(--color-dentro)] border rounded-xl border-white m-10 p-7 hover:shadow-2xl shadow-white/50">
+        <h3 class="text-lg font-bold">eCommerce</h3>
+        <p class="">Tiendas online seguras y fáciles de gestionar.</p>
+      </article>
+      <article
+        class="bg-[var(--color-dentro)] border rounded-xl border-white m-10 p-7 hover:shadow-2xl shadow-white/50">
+        <h3 class="text-lg font-bold">Branding</h3>
+        <p class="">
+          Construimos una identidad visual coherente y memorable.
+        </p>
+      </article>
+      <article
+        class="bg-[var(--color-dentro)] border rounded-xl border-white m-10 p-7 hover:shadow-2xl shadow-white/50">
+        <h3 class="text-lg font-bold">Optimización</h3>
+        <p class="">Mejoramos rendimiento, Core Web Vitals y conversión.</p>
+      </article>
+      <article
+        class="bg-[var(--color-dentro)] border rounded-xl border-white m-10 p-7 hover:shadow-2xl shadow-white/50">
+        <h3 class="text-lg font-bold">Soporte</h3>
+        <p class="">Mantenimiento y mejoras continuas para tu proyecto.</p>
+      </article>
+    </div>
+  </section>
 
-    <!-- SOBRE NOSOTROS / TESTIMONIO -->
-    <section id="sobre-nosotros" class="flex flex-col-2 ">
-      <!-- TODO:
-      - Usa flex o grid:
+  <!-- SOBRE NOSOTROS / TESTIMONIO -->
+  <section id="sobre-nosotros" class="flex flex-col-1  md:flex-col-2 items-center justify-center">
+    <!-- TODO:
+      - Usa flex o grid: 
         - En móvil: contenido en columna.
         - En desktop: dos columnas (texto a la izquierda, card/testimonio a la derecha).
       - Añade espaciado vertical generoso.
     -->
-      <div class="p-10 ">
-        <h2 class="text-4xl font-bold ">Por qué trabajar con nosotros</h2>
-        <p class="text-gray-300">
-          Somos un equipo de desarrolladores y diseñadores apasionados por crear
-          productos digitales que realmente aporten valor.
-        </p>
-        <ul class="list-disc">
-          <li>Comunicación clara</li>
-          <li>Entregas rápidas</li>
-          <li>Código limpio y mantenible</li>
-        </ul>
-      </div>
+    <div class="p-10 ">
+      <h2 class="text-4xl font-bold ">Por qué trabajar con nosotros</h2>
+      <p class="text-gray-300">
+        Somos un equipo de desarrolladores y diseñadores apasionados por crear
+        productos digitales que realmente aporten valor.
+      </p>
+      <ul class="list-disc">
+        <li>Comunicación clara</li>
+        <li>Entregas rápidas</li>
+        <li>Código limpio y mantenible</li>
+      </ul>
+    </div>
 
-      <div class="p-10">
-        <!-- TODO:
+    <div class="p-10">
+      <!-- TODO:
         - Crea una card de testimonio:
           - Fondo blanco
           - Borde o sombra
@@ -189,46 +195,45 @@
           - Padding
           - Pequeño círculo como avatar
       -->
-        <div class="border rounded-xl p-10 bg-[var(--color-dentro)]">
-          <div class="bg-blue-700 h-10 w-10 rounded-full flex items-center justify-center">A</div>
-          <p class="my-5">
-            “DevStudio transformó nuestra web en una herramienta clave para
-            captar clientes.”
-          </p>
-          <p class="my-5">— Ana López, CEO de TechNow</p>
-        </div>
+      <div class="border rounded-xl p-10 bg-[var(--color-dentro)]">
+        <div class="bg-blue-700 h-10 w-10 rounded-full flex items-center justify-center">A</div>
+        <p class="my-5">
+          “DevStudio transformó nuestra web en una herramienta clave para
+          captar clientes.”
+        </p>
+        <p class="my-5">— Ana López, CEO de TechNow</p>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- CONTACTO / CTA FINAL -->
-    <section id="contacto" class="flex items-center justify-center ">
-      <!-- TODO:
+  <!-- CONTACTO / CTA FINAL -->
+  <section id="contacto" class="flex items-center justify-center ">
+    <!-- TODO:
       - Fondo con color diferenciado.
       - Contenido centrado.
       - Borde o sombra suave en el formulario/bloque.
     -->
-      <div class="border rounded-3xl p-20 bg-[var(--color-dentro)]">
-        <h2 class="text-4xl font-bold">¿Listo para empezar tu proyecto?</h2>
-        <p class="text-gray-300">
-          Envíanos un mensaje y te responderemos con una propuesta
-          personalizada.
-        </p>
-        <form class="flex flex-col gap-3 ">
-          <input type="text" placeholder="Tu nombre" class="border rounded-3xl p-1" />
-          <input type="email" placeholder="Tu email" class="border rounded-3xl p-1" />
-          <textarea
-            placeholder="Cuéntanos sobre tu proyecto"
-            class="border rounded-3xl p-4"
-          ></textarea>
-          <!-- TODO: Botón con hover y ancho completo en móvil -->
-          <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2  max-w-30 border border-blue-700 rounded-lg hover:shadow-2xl shadow-white/50">Enviar mensaje</button>
-        </form>
-      </div>
-    </section>
+    <div class="border rounded-3xl p-20 bg-[var(--color-dentro)]">
+      <h2 class="text-4xl font-bold">¿Listo para empezar tu proyecto?</h2>
+      <p class="text-gray-300">
+        Envíanos un mensaje y te responderemos con una propuesta
+        personalizada.
+      </p>
+      <form class="flex flex-col gap-3 ">
+        <input type="text" placeholder="Tu nombre" class="border rounded-3xl p-1" />
+        <input type="email" placeholder="Tu email" class="border rounded-3xl p-1" />
+        <textarea placeholder="Cuéntanos sobre tu proyecto" class="border rounded-3xl p-4"></textarea>
+        <!-- TODO: Botón con hover y ancho completo en móvil -->
+        <button type="submit"
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2  max-w-30 border border-blue-700 rounded-lg hover:shadow-2xl shadow-white/50">Enviar
+          mensaje</button>
+      </form>
+    </div>
+  </section>
 
-    <!-- FOOTER -->
-    <footer class="">
-      <!-- TODO:
+  <!-- FOOTER -->
+  <footer class="">
+    <!-- TODO:
       - Fondo oscuro
       - Texto claro
       - Usa flex o grid para distribuir:
@@ -237,15 +242,16 @@
         - Copyright
       - Centrado en móvil
     -->
-      <div class="flex items-center flex-row justify-around m-5 md:items-center justify-center">
-        <p>© 2025 DevStudio. Todos los derechos reservados.</p>
-        <div class="">
-          <a href="#hero">Inicio</a>
-          <a href="#servicios">Servicios</a>
-          <a href="#sobre-nosotros">Sobre nosotros</a>
-          <a href="#contacto">Contacto</a>
-        </div>
+    <div class="flex items-center flex-row justify-around m-5 md:items-center justify-center gap-10">
+      <p>© 2025 DevStudio. Todos los derechos reservados.</p>
+      <div class="">
+        <a href="#hero">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#sobre-nosotros">Sobre nosotros</a>
+        <a href="#contacto">Contacto</a>
       </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+</body>
+
 </html>
